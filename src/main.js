@@ -9,7 +9,7 @@ import GPU from "@/components/gpu/GPU";
 loadFonts()
 const routes = [
     {path: '/', component: GPUMachines},
-    {path: '/gpu', component: GPU},
+    {path: '/gpu/:id', component: GPU, props:true},
 ]
 const router = VueRouter.createRouter({
     history: VueRouter.createWebHashHistory(),
