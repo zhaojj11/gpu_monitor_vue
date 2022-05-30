@@ -3,8 +3,8 @@
 
     <AppBar/>
     <v-container>
-      <v-row v-for="machine in machines" :key="machine.id">
-        <v-col cols="6">
+      <v-row>
+        <v-col cols="4" v-for="machine in machines" :key="machine.id">
           <MachineCard :machine="machine"></MachineCard>
         </v-col>
       </v-row>

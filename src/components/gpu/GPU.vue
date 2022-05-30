@@ -92,7 +92,6 @@ export default {
           'power%': _.floor(v['power_draw'] / v['power_limit'], 2) * 100
         })
       })
-      console.log(gpus);
       return gpus;
     }
   }
